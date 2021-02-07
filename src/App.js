@@ -5,7 +5,7 @@ import Menu from './Menu';
 const App = () => (
   <ScrollingProvider>
     <Menu />
-    <Section id="homer">Home section</Section>
+    <Section id="home">Home section</Section>
     <Section id="about">About section</Section>
   </ScrollingProvider>
 );

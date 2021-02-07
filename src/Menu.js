@@ -1,5 +1,6 @@
 import React from 'react';
 import {useScrollSections} from 'react-scroll-section';
+import MenuItem from './MenuItem';
 
 const Menu = () => {
     const sections = useScrollSections();
@@ -7,9 +8,7 @@ const Menu = () => {
     return (
       <ul>
         {sections.map(({ id, onClick, selected }) => (
-          <li key={id} onClick={onClick} selected={selected}>
-            {id.toUpperCase()}
-          </li>
+          <MenuItem key = {id} name={id.toUpperCase()} onClick={onClick} selected={selected}/>
         ))}
       </ul>
     );
