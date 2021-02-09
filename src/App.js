@@ -1,7 +1,7 @@
 import React from 'react';
 import {ScrollingProvider, Section} from 'react-scroll-section';
 import Menu from './Menu';
- 
+
 const App = () => (
   <ScrollingProvider>
     <Menu />
@@ -11,3 +11,5 @@ const App = () => (
 );
 
 export default App;
+
+// @styled-icons/heroicons-outline/Home

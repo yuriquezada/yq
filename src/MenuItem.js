@@ -1,12 +1,24 @@
 import React from 'react';
-// import {useScrollSections} from 'react-scroll-section';
+import styled from 'styled-components'
+
+import {Home} from '@styled-icons/heroicons-outline/Home'
+
+const StyledMenuItem = styled.li`
+    &:after {
+        content: 'jkfoi'
+    }
+`
+
+const RedHome = styled(Home)`
+    color: red;
+    width: 20px; height: 20px;
+`
 
 const MenuItem = ({name}) => {
-    // const sections = useScrollSections();
     return (
-          <li>
-            {name}
-          </li>
+        <StyledMenuItem>            
+            {name}<RedHome />
+        </StyledMenuItem>
     );
   };
 
