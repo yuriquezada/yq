@@ -8,7 +8,7 @@ const Menu = () => {
     return (
       <ul>
         {sections.map(({ id, onClick, selected }) => (
-          <MenuItem key = {id} name={id.toUpperCase()} onClick={onClick} selected={selected}/>
+          <MenuItem key = {id} name={id} onClick={onClick} selected={selected}/>
         ))}
       </ul>
     );
