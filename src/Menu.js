@@ -4,10 +4,10 @@ import MenuItem from './MenuItem';
 
 const Menu = () => {
     const sections = useScrollSections();
-   
+    
     return (
       <ul>
-        {sections.map(({ id, onClick, selected }) => (
+        {sections.map(({ id, onClick, selected}) => (
           <MenuItem key = {id} name={id} onClick={onClick} selected={selected}/>
         ))}
       </ul>
